@@ -399,7 +399,14 @@ Robust Multi-image Understanding">
         <br>
         <h2 class="title is-5">3. Are errors caused by specific image positions or unanserable types? </h2>
         <h2 class="content has-text-justified">
-          hello.
+          <ul>
+            <li>
+              As in the left figure, we analyze the error rates of varying input positions of images and report the performance of GPT-4o, GeminiProVision, and Mantis-8B-Idefics2. The highest accuracy is achieved when images are positioned in options, while the highest error rate can be observed when images are in the middle of questions. This consistent trend across different models suggests that the position of images within a question correlates with the error rate.
+            </li>
+            <li>
+              As in the right figure, results show that the error rate also correlates with the type of unanswerable instances. All the three models perform relatively better when we only change the questions to make it incompatible with original images and options. However, all models are confused when the correct option is removed and fail to choose “none of the other options” in this scenario. The performance on unanswerable instances created by reordering or replacing images is divergent. Notably, GPT-4o performs much better than the other models in these cases.
+            </li>
+          </ul>          
         </h2>
 
         <div class="myrow">
